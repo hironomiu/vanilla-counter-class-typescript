@@ -61,6 +61,14 @@ npm install --save-dev eslint eslint-webpack-plugin @typescript-eslint/eslint-pl
 npm install --save-dev jest jsdom eslint-plugin-jest @types/jest @types/jsdom
 ```
 
+```
+npm install --save-dev ts-node ts-jest
+```
+
+```
+npx jest --init
+```
+
 ### CSS(sass)
 
 ```
