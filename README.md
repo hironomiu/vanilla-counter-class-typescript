@@ -46,3 +46,9 @@ npm install --save-dev babel-loader @babel/core @babel/preset-env @babel/preset-
 ```
 npm install --save-dev eslint eslint-webpack-plugin @typescript-eslint/eslint-plugin @typescript-eslint/parser
 ```
+
+### テスト（Jest)
+
+```
+npm install --save-dev jest jsdom eslint-plugin-jest @types/jest @types/jsdom
+```
