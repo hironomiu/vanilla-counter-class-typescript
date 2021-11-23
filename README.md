@@ -1,6 +1,6 @@
 # vanilla-counter-class-typescript
 
-[!build](https://github.com/hironomiu/vanilla-counter-class-typescript/actions/workflows/webpack.yml/badge.svg)](https://github.com/hironomiu/vanilla-counter-class-typescript/actions/workflows/webpack.yml)
+[![build](https://github.com/hironomiu/vanilla-counter-class-typescript/actions/workflows/webpack.yml/badge.svg)](https://github.com/hironomiu/vanilla-counter-class-typescript/actions/workflows/webpack.yml)
 
 ## Run
 
