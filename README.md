@@ -2,6 +2,8 @@
 
 [![build](https://github.com/hironomiu/vanilla-counter-class-typescript/actions/workflows/webpack.yml/badge.svg)](https://github.com/hironomiu/vanilla-counter-class-typescript/actions/workflows/webpack.yml)
 
+TypeScript + Webpack + Babel + Jest + Sass 構成のサンプル
+
 ## Run
 
 ```
@@ -12,6 +14,12 @@ npm start
 
 ```
 npm run build
+```
+
+## Test
+
+```
+npm test
 ```
 
 ## SetUp
@@ -47,7 +55,7 @@ npm install --save-dev babel-loader @babel/core @babel/preset-env @babel/preset-
 npm install --save-dev eslint eslint-webpack-plugin @typescript-eslint/eslint-plugin @typescript-eslint/parser
 ```
 
-### テスト（Jest)
+### Jest
 
 ```
 npm install --save-dev jest jsdom eslint-plugin-jest @types/jest @types/jsdom
@@ -59,13 +67,13 @@ npm install --save-dev jest jsdom eslint-plugin-jest @types/jest @types/jsdom
 npm install --save-dev sass-loader node-sass css-loader mini-css-extract-plugin
 ```
 
-### css(postcss) 関連
+### CSS(postcss)
 
 ```
 npm install --save-dev postcss-loader autoprefixer
 ```
 
-### css(最適化) 関連
+### CSS(最適化)
 
 ```
 npm install --save-dev cssnano
