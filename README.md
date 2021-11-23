@@ -1,5 +1,7 @@
 # vanilla-counter-class-typescript
 
+[![NodeJS with Webpack](https://github.com/hironomiu/vanilla-counter-class-typescript/actions/workflows/webpack.yml/badge.svg)](https://github.com/hironomiu/vanilla-counter-class-typescript/actions/workflows/webpack.yml)
+
 ## Run
 
 ```
@@ -33,7 +35,7 @@ npm install --save-dev typescript ts-loader
 npx tsc --init
 ```
 
-### babel
+### Babel
 
 ```
 npm install --save-dev babel-loader @babel/core @babel/preset-env @babel/preset-typescript
