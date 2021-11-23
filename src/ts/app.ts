@@ -35,7 +35,7 @@ class ViewController {
         <h1>Vanilla Class Counter App</h1>
       </div>
     <div class="div1">
-      <button "id="decrement_button">decrement</button>
+      <button id="decrement_button">decrement</button>
       <p>${this.model.count}</p>
       <button id="increment_button">increment</button>
     </div>
@@ -46,6 +46,7 @@ class ViewController {
     </div>
       
     `
+
     this.$decrement = <HTMLButtonElement>(
       document.getElementById('decrement_button')
     )
@@ -81,6 +82,7 @@ class ViewController {
   }
 
   decrement() {
+    console.log('decrement')
     this.model.decrement()
   }
 
