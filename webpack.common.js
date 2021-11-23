@@ -2,6 +2,7 @@ const path = require('path')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ESLintPlugin = require('eslint-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
   entry: { app: './src/ts/app.ts' },
@@ -9,21 +10,43 @@ module.exports = {
     filename: 'js/[name].[contenthash].js',
     path: path.resolve(__dirname, 'public'),
   },
+  optimization: {
+    splitChunks: {
+      cacheGroups: {
+        vendor: {
+          chunks: 'initial',
+          test: /[\\/]node_modules[\\/]/,
+          name: 'vendor',
+          minChunks: 1,
+        },
+        // vendorModules: {
+        //   chunks: 'initial',
+        //   test: /src[\\/]ts[\\/]modules/,
+        //   name: 'vendor-modules',
+        //   minSize: 0,
+        //   minChunks: 1,
+        // },
+        defaultVendors: {
+          filename: 'js/[name].[contenthash].js',
+        },
+      },
+    },
+  },
   module: {
     rules: [
-      // {
-      //   enforce: 'pre',
-      //   test: /\.ts$/,
-      //   loader: 'eslint-webpack-plugin',
-      //   exclude: /node_modules/,
-      //   options: {
-      //     emitWarning: true,
-      //   },
-      // },
       {
         test: /\.ts$/,
         use: 'babel-loader',
         exclude: /node_modules/,
+      },
+      {
+        test: /\.scss$/,
+        use: [
+          MiniCssExtractPlugin.loader,
+          'css-loader',
+          'postcss-loader',
+          'sass-loader',
+        ],
       },
     ],
   },
@@ -39,6 +62,9 @@ module.exports = {
     new ESLintPlugin({
       extensions: ['.ts', '.js'],
       exclude: 'node_modules',
+    }),
+    new MiniCssExtractPlugin({
+      filename: './css/[name].[contenthash].css',
     }),
   ],
 }

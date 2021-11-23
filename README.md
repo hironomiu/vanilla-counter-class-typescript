@@ -52,3 +52,21 @@ npm install --save-dev eslint eslint-webpack-plugin @typescript-eslint/eslint-pl
 ```
 npm install --save-dev jest jsdom eslint-plugin-jest @types/jest @types/jsdom
 ```
+
+### CSS(sass)
+
+```
+npm install --save-dev sass-loader node-sass css-loader mini-css-extract-plugin
+```
+
+### css(postcss) 関連
+
+```
+npm install --save-dev postcss-loader autoprefixer
+```
+
+### css(最適化) 関連
+
+```
+npm install --save-dev cssnano
+```
