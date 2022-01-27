@@ -2,7 +2,9 @@
 
 [![build](https://github.com/hironomiu/vanilla-counter-class-typescript/actions/workflows/webpack.yml/badge.svg)](https://github.com/hironomiu/vanilla-counter-class-typescript/actions/workflows/webpack.yml)
 
-TypeScript + Webpack + Babel + Jest + Sass 構成のサンプル
+TypeScript + Webpack + Babel + Jest + Sass 構成で生 JS でのカウンターアプリ
+
+![demo](./demo.gif)
 
 ## Run
 
@@ -23,6 +25,12 @@ npm test
 ```
 
 ## SetUp
+
+```
+npm install
+```
+
+## Install Memo
 
 ### initialize
 
